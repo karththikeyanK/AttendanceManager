@@ -36,7 +36,7 @@ public class OpenApiConfig {
         License mitLicense = new License().name("MIT License").url("https://choosealicense.com/licenses/mit/");
 
         Info info = new Info()
-                .title("Attendance Management Common Service")
+                .title("Attendance Management Using rabbitmq")
                 .version("1.0")
                 .contact(contact)
                 .description("This API exposes endpoints to manage attendance of any Organization.").termsOfService("https://www.eimsky.com")
