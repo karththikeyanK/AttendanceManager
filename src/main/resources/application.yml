@@ -1,1 +1,36 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/Attendance
+    username: karthik
+    password: example-password
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL8Dialect
+
+
+rabbitmq:
+  queue:
+    checkin:
+      name: checkin_queue
+    checkout:
+      name: checkout_queue
+  exchange:
+    name: api_exchange
+  routing:
+    checkin:
+      key: checkin_message_routing-key
+    checkout:
+        key: checkout_message_routing-key
+
+
 
