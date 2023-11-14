@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 import java.util.List;
 @Configuration
 public class OpenApiConfig {
-    @Value("${springdoc.swagger-ui.path}")
+    @Value("${springdoc.openapi.dev-url}")
     private String devUrl;
 
     @Value("${springdoc.api-docs.path}")
